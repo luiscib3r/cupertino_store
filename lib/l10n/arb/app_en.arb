@@ -1,4 +1,8 @@
 {
   "@@locale": "en",
-  "appName": "Cupertino Store"
+  "appName": "Cupertino Store",
+  "products": "Products",
+  "search": "Search",
+  "cart": "Cart",
+  "shoppingCart": "Shopping Cart"
 }
