@@ -1,5 +1,5 @@
 name: cupertino_store
-description: A new Flutter project.
+description: Cupertino Store.
 
 publish_to: "none"
 
@@ -17,7 +17,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   freezed_annotation: ^1.1.0
+  get_it: ^7.2.0
   go_router: ^3.0.7
+  injectable: ^1.5.3
   intl: ^0.17.0
   shrine_images: ^2.0.1
 
@@ -26,7 +28,47 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   freezed: ^1.1.1
+  injectable_generator: ^1.5.3
   very_good_analysis: ^2.4.0
 
 flutter:
   generate: true
+  assets:
+    - packages/shrine_images/0-0.jpg
+    - packages/shrine_images/1-0.jpg
+    - packages/shrine_images/2-0.jpg
+    - packages/shrine_images/3-0.jpg
+    - packages/shrine_images/4-0.jpg
+    - packages/shrine_images/5-0.jpg
+    - packages/shrine_images/6-0.jpg
+    - packages/shrine_images/7-0.jpg
+    - packages/shrine_images/8-0.jpg
+    - packages/shrine_images/9-0.jpg
+    - packages/shrine_images/10-0.jpg
+    - packages/shrine_images/11-0.jpg
+    - packages/shrine_images/12-0.jpg
+    - packages/shrine_images/13-0.jpg
+    - packages/shrine_images/14-0.jpg
+    - packages/shrine_images/15-0.jpg
+    - packages/shrine_images/16-0.jpg
+    - packages/shrine_images/17-0.jpg
+    - packages/shrine_images/18-0.jpg
+    - packages/shrine_images/19-0.jpg
+    - packages/shrine_images/20-0.jpg
+    - packages/shrine_images/21-0.jpg
+    - packages/shrine_images/22-0.jpg
+    - packages/shrine_images/23-0.jpg
+    - packages/shrine_images/24-0.jpg
+    - packages/shrine_images/25-0.jpg
+    - packages/shrine_images/26-0.jpg
+    - packages/shrine_images/27-0.jpg
+    - packages/shrine_images/28-0.jpg
+    - packages/shrine_images/29-0.jpg
+    - packages/shrine_images/30-0.jpg
+    - packages/shrine_images/31-0.jpg
+    - packages/shrine_images/32-0.jpg
+    - packages/shrine_images/33-0.jpg
+    - packages/shrine_images/34-0.jpg
+    - packages/shrine_images/35-0.jpg
+    - packages/shrine_images/36-0.jpg
+    - packages/shrine_images/37-0.jpg

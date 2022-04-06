@@ -5,8 +5,11 @@ linter:
     public_member_api_docs: false
 
 analyzer:
+  strong-mode:
+    implicit-dynamic: true
   exclude:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
+    - "**/dependencies.config.dart"
   errors:
     invalid_annotation_target: ignore

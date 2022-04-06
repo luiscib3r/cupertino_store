@@ -4,5 +4,7 @@
   "products": "Products",
   "search": "Search",
   "cart": "Cart",
-  "shoppingCart": "Shopping Cart"
+  "shoppingCart": "Shopping Cart",
+  "add": "Add",
+  "noData": "No data"
 }

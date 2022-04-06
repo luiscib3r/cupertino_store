@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 const appTheme = CupertinoThemeData(brightness: Brightness.light);
 
 abstract class Styles {
-  static const TextStyle productRowItem = TextStyle(
+  static const TextStyle productRowItemName = TextStyle(
     color: Color.fromRGBO(0, 0, 0, 0.8),
     fontSize: 18,
     fontStyle: FontStyle.normal,

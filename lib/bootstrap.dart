@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:developer';
 
+import 'package:cupertino_store/app/app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -17,6 +18,8 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
       log(details.exceptionAsString(), stackTrace: details.stack);
     };
   }
+
+  setupDependencies();
 
   runApp(await builder());
 }
