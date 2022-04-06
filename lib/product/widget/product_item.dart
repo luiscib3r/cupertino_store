@@ -1,7 +1,9 @@
 import 'package:cupertino_store/app/theme.dart';
 import 'package:cupertino_store/data/data.dart';
 import 'package:cupertino_store/l10n/l10n.dart';
+import 'package:cupertino_store/shopping/bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({
@@ -16,6 +18,8 @@ class ProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+
+    final shoppingBloc = context.read<ShoppingBloc>();
 
     final row = SafeArea(
       top: false,
@@ -55,7 +59,9 @@ class ProductItem extends StatelessWidget {
           ),
           CupertinoButton(
             padding: EdgeInsets.zero,
-            onPressed: () {},
+            onPressed: () {
+              shoppingBloc.add(ShoppingEvent.addProduct(product));
+            },
             child: Icon(
               CupertinoIcons.plus_circled,
               semanticLabel: l10n.add,
