@@ -1,7 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:cupertino_store/data/data.dart';
-import 'package:cupertino_store/data/repositories/products_repository.dart';
-import 'package:cupertino_store/data/result/result_error.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 

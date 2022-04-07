@@ -1,3 +1,4 @@
+import 'package:cupertino_store/app/app.dart';
 import 'package:cupertino_store/app/theme.dart';
 import 'package:cupertino_store/l10n/l10n.dart';
 import 'package:cupertino_store/product/product.dart';
@@ -19,7 +20,13 @@ class ProductListTab extends StatelessWidget {
         SliverSafeArea(
           top: false,
           minimum: const EdgeInsets.only(top: 8),
-          sliver: BlocBuilder<ProductBloc, ProductState>(
+          sliver: BlocConsumer<ProductBloc, ProductState>(
+            listenWhen: (prev, next) => prev.error != next.error,
+            listener: (context, state) {
+              if (state.error != null) {
+                ErrorDialog.show(context, state.error!);
+              }
+            },
             builder: (context, state) {
               if (state.loading) {
                 return SliverList(
@@ -27,7 +34,7 @@ class ProductListTab extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.all(12),
                       child: CupertinoActivityIndicator(
-                        radius: 22,
+                        radius: 20,
                       ),
                     ),
                   ]),

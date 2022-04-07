@@ -1,6 +1,8 @@
 import 'package:cupertino_store/data/result/result_error.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+export 'result_error.dart';
+
 part 'result.freezed.dart';
 
 @freezed

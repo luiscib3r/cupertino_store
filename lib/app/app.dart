@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 export 'dependencies/dependencies.dart';
+export 'widget/widget.dart';
 
 class CupertinoStoreApp extends StatelessWidget {
   const CupertinoStoreApp({Key? key}) : super(key: key);

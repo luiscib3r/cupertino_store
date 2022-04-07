@@ -6,5 +6,7 @@
   "cart": "Cart",
   "shoppingCart": "Shopping Cart",
   "add": "Add",
-  "noData": "No data"
+  "noData": "No data",
+  "error": "Error",
+  "accept": "Accept"
 }

@@ -5,16 +5,25 @@ import 'package:injectable/injectable.dart';
 class ProductsRepository {
   Future<Result<Iterable<Product>>> findAll({
     required Category category,
+    String? searchTerms,
   }) async {
     await Future.delayed(const Duration(seconds: 1));
 
-    if (category == Category.all) {
-      return const Result.success(_allProducts);
-    } else {
-      final data = _allProducts.where((p) => p.category == category);
+    Iterable<Product> data;
 
-      return Result.success(data);
+    if (category == Category.all) {
+      data = _allProducts;
+    } else {
+      data = _allProducts.where((p) => p.category == category);
     }
+
+    if (searchTerms != null) {
+      data = data.where(
+        (p) => p.name.toLowerCase().contains(searchTerms.toLowerCase()),
+      );
+    }
+
+    return Result.success(data);
   }
 
   static const _allProducts = <Product>[
