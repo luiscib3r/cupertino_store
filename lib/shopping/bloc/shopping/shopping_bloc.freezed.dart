@@ -598,8 +598,8 @@ class __$ShoppingStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ShoppingState implements _ShoppingState {
-  const _$_ShoppingState({required this.cart});
+class _$_ShoppingState extends _ShoppingState {
+  const _$_ShoppingState({required this.cart}) : super._();
 
   @override
   final Map<Product, int> cart;
@@ -627,9 +627,10 @@ class _$_ShoppingState implements _ShoppingState {
       __$ShoppingStateCopyWithImpl<_ShoppingState>(this, _$identity);
 }
 
-abstract class _ShoppingState implements ShoppingState {
+abstract class _ShoppingState extends ShoppingState {
   const factory _ShoppingState({required Map<Product, int> cart}) =
       _$_ShoppingState;
+  const _ShoppingState._() : super._();
 
   @override
   Map<Product, int> get cart;

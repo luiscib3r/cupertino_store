@@ -8,5 +8,8 @@
   "add": "Add",
   "noData": "No data",
   "error": "Error",
-  "accept": "Accept"
+  "accept": "Accept",
+  "shipping": "Shipping",
+  "tax": "Tax",
+  "total": "Total"
 }
